@@ -1,16 +1,22 @@
+/* Fonte da Letra */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 /* Editando as seções */
 #sobre,
 #servicos,
 #portifolio,
 #contato {
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 
 /* Hero Section */
 .bgimage {
   height: 100vh;
   position: relative;
-  background: url();
+  background: url(img/Portifolio/hero.jpg);
   background-size: cover;
 }
 
@@ -28,82 +34,188 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
+  color: white;
 }
 
 /* Imagem Sobre Mim */
-.abotImage {
+#sobre {
+  background-color: #241a1b;
+  color: white;
+}
+
+.aboutImage {
   width: 100%;
 }
 
-/* Services Section */
-.servicesText.card {
-  height: 200px;
-  cursor: pointer;
-  padding: 0 2rem;
-}
-.servicesIcon {
-  height: 36px;
-  text-align: center;
-  width: 100%;
-}
-.cardTitle {
-text-align: center;
-}
-.card:hover, .servicesIcon {
-    color: blueviolet;
-}
-.servicesText:hover {
-    border: 1px solid blueviolet;
-}
 /* Estilização do Cabeçalho */
-.navbar{
-    background-color: blueviolet;
+.navbar {
+  background-color: #241a1b;
 }
-.navbar a{ 
-    color: white;
-    padding: 0.5rem;
+.navbar a {
+  color: white;
+  padding: 0.5rem;
 }
-.navbar a:hover{
-    background-color: white;
-    color: black;
-    border-radius: 4px;
+.navbar a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 4px;
 }
 
 /* Contact Section */
-.contactIcon{
-    font-size: 2.5rem;
-    color: blueviolet;
+#contato {
+  background-color: #241a1b;
+}
+#contato h2 {
+  color: white;
+}
+.cardBody{
+  padding: 15px;
+}
+.contactIcon {
+  font-size: 2.5rem;
+  color: #493737;
+  height: 40px;
+}
+.iconWhite {
+  color: white;
+}
+
+/* Portifolio Section */
+#portifolio {
+  background-color: white;
 }
 
 /* Footer */
-footer{
-    background-color: blueviolet;
+footer {
+  background-color: #241a1b;
 }
-.footerIcon{
-    font-size: 2.5rem;
-    color: white;
+.footerIcon {
+  font-size: 2.5rem;
+  color: white;
 }
-.footerIcon:hover{
-    color: #c4c4c4;
+.footerIcon:hover {
+  color: #c4c4c4;
 }
-.footerDev{
-    background-color: darkorchid;
+.footerDev {
+  background-color: #241a1b;
 }
 
 /* Efeito GlassMorphism */
-.glass{
-position: absolute;
-height: 40%;
+.glass {
+  position: absolute;
+  height: 40%;
 
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-background: rgba(25, 0, 47, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(25, 0, 47, 1);
- }
+  background: rgba(25, 0, 47, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(25, 0, 47, 1);
+}
+
+/*  Hability Section */
+.habilidades-pd {
+  height: 500px;
+  padding-top: 93px;
+}
+
+.habilidades-pd h2 {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.skills-descricao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 70px;
+}
+
+.conteiner-skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 37px;
+  min-width: 55%;
+}
+
+.skill-box {
+  height: 106px;
+  width: 106px;
+  background-color: #c4c4c4;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: ease 0.3s;
+}
+
+.skill-box:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+
+.texto-descricao {
+  height: 40%;
+}
+
+.conteiner-descricao {
+  color: black;
+  font-size: 20px;
+  width: 40%;
+
+}
+
+@media (max-width: 1200px) {
+  .conteiner-descricao {
+    height: 260px;
+  }
+
+  #habilidades {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills-descricao {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    gap: 50px;
+    padding-bottom: 70px;
+    align-items: center;
+  }
+
+  .skills-descricao p {
+    text-align: center;
+  }
+}
+@media (max-width: 950px) {
+  .conteiner-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 37px;
+    max-width: 300px;
+  }
+
+  .conteiner-descricao {
+    max-width: 300px;
+  }
+}
+
+.skill-box .icones-habilidades {
+  filter: grayscale(100%);
+  transition: ease-in-out 0.3s;
+}
+
+.skill-box:hover .icones-habilidades {
+  filter: grayscale(0%);
+}
