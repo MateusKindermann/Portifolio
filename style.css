@@ -37,6 +37,7 @@ body {
   color: white;
 }
 
+
 /* Imagem Sobre Mim */
 #sobre {
   background-color: #241a1b;
@@ -83,6 +84,9 @@ body {
 /* Portifolio Section */
 #portifolio {
   background-color: white;
+}
+.cardTitle{
+  text-align: center;
 }
 
 /* Footer */
